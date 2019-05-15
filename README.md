@@ -31,4 +31,36 @@ This step analyzes the numerical variables. We start by looking at just the vari
 
 In this stage, we look at the categorical variables. These are variables defined by a string separated into different categories. We determine the cardinality of the data to see the amount of samples of each category for each feature. 
 
-## Feature Engineering
+## Feature Engineering (Relevant Notebook: [Feature_Engineering.ipynb](https://github.com/amish-suchak/Machine-Learning-Infrastructure/blob/master/Feature%20Engineering.ipynb))
+
+After analyzing the data, this is the next step of the process where we "Engineer" the features. This is still a part of the pre-processing step. It includes fixing the variables with NaNs, discarding rare labels, fixing the distribution of variables, and also splitting the data into testing and training sets.
+
+### Splitting the data into training and testing sets 
+
+We do this step before pre-processing the data. The test-set is not used to learn the transform parameters; it needs to be completely new data.
+
+### Filling up the missing (NaN) values from the categorical and continuous variables
+
+For the categorical variables, we fill the NaN values with "missing". For the continuous variables, we fill the missing data with the mode of the variable. 
+
+### Fixing temporal variables  
+
+We take the "Age" instead of the "Year". The age is just a number with respect to when the house was sold.
+
+### Making numerical variables normally distributed 
+
+Converting numerical values which do not contain 0 to a Gaussian distribution helps linear models converge better
+
+### Removing rare occurences of labels
+
+In categorical variables, we don't want to deal with variables that are present in less than 1% of observation so we can just remove them.
+
+### Converting strings into categories 
+
+In this stage, we convert the categorical strings that we have into numerical categories. These numerical categories are defined and ranked by the mean of the output. Categories with a lower sale price would be ranked 1 and higher mean sale price would be ranked 5. 
+
+### Feature Scaling
+
+This step just scales the features using the MinMaxScaler from the sklearn library. 
+
+
