@@ -31,6 +31,8 @@ This step analyzes the numerical variables. We start by looking at just the vari
 
 In this stage, we look at the categorical variables. These are variables defined by a string separated into different categories. We determine the cardinality of the data to see the amount of samples of each category for each feature. 
 
+***
+
 ## Feature Engineering (Relevant Notebook: [Feature_Engineering.ipynb](https://github.com/amish-suchak/Machine-Learning-Infrastructure/blob/master/Feature%20Engineering.ipynb))
 
 After analyzing the data, this is the next step of the process where we "Engineer" the features. This is still a part of the pre-processing step. It includes fixing the variables with NaNs, discarding rare labels, fixing the distribution of variables, and also splitting the data into testing and training sets.
