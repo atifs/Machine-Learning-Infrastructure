@@ -33,6 +33,7 @@ In this stage, we look at the categorical variables. These are variables defined
 
 ***
 
+
 ## Feature Engineering (Relevant Notebook: [Feature_Engineering.ipynb](https://github.com/amish-suchak/Machine-Learning-Infrastructure/blob/master/Feature%20Engineering.ipynb))
 
 After analyzing the data, this is the next step of the process where we "Engineer" the features. This is still a part of the pre-processing step. It includes fixing the variables with NaNs, discarding rare labels, fixing the distribution of variables, and also splitting the data into testing and training sets.
@@ -65,4 +66,9 @@ In this stage, we convert the categorical strings that we have into numerical ca
 
 This step just scales the features using the MinMaxScaler from the sklearn library. 
 
+***
+
+## Feature Selection
+
+This step of the pipeline deals with selecting the appropriate features for our analysis. Feature selection is a vast topic with many methods to select features depending on the type of problem. For the Boston Housing Prices problem, we look at selecting features through a LASSO Regression method. Once the appropriate features are selected, the column names are stored in a list to use in the final model part of the process. 
 
