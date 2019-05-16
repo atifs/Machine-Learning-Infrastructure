@@ -9,7 +9,7 @@ We start with the Data Analysis step where we look at analyzing the different at
 
 1.NaN value analyzer 
 
-This step analyzes all the instances of NaN value in the dataset. Unlike the .csv file having "0", the NaN values represent having no information at all. For each feature, we want to determine how much of the information we can use. Hence, we see if there are features with a high percentage of missing values. 
+   This step analyzes all the instances of NaN value in the dataset. Unlike the .csv file having "0", the NaN values represent having no information at all. For each feature, we want to determine how much of the information we can use. Hence, we see if there are features with a high percentage of missing values. 
 
 ### NaN determine usefulness of variables 
 
