@@ -7,7 +7,7 @@ We look at the initial exploration when creating a machine learning pipeline by 
 
 We start with the Data Analysis step where we look at analyzing the different attributes of data and performing the preliminary data exploration step to determine the important features and discard the features that are irrelevant or do not contribute to the output variable (In this case, the price of the house). 
 
-1.NaN value analyzer 
+1. NaN value analyzer 
 
    This step analyzes all the instances of NaN value in the dataset. Unlike the .csv file having "0", the NaN values represent having no information at all. For each feature, we want to determine how much of the information we can use. Hence, we see if there are features with a high percentage of missing values. 
 
