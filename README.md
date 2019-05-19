@@ -68,7 +68,7 @@ After analyzing the data, this is the next step of the process where we "Enginee
 
 ***
 
-## Feature Selection
+## Feature Selection (Relevant Notebook: [Feature_Selection.ipynb](https://github.com/amish-suchak/Machine-Learning-Infrastructure/blob/master/Feature_Selection.ipynb)
 
 This step of the pipeline deals with selecting the appropriate features for our analysis. Feature selection is a vast topic with many methods to select features depending on the type of problem. For the Boston Housing Prices problem, we look at selecting features through a LASSO Regression method. Once the appropriate features are selected, the column names are stored in a list to use in the final model part of the process. 
 
